@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true">
+        <processorPath useClasspath="false" />
+      </profile>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="result" />
+        <module name="aggregation" />
+        <module name="game" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="aggregation" target="1.8" />
+      <module name="game" target="1.8" />
+      <module name="quizon" target="1.8" />
+      <module name="result" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="aggregation" options="-parameters" />
+      <module name="game" options="-parameters" />
+      <module name="quizon" options="-parameters" />
+      <module name="result" options="-parameters" />
+    </option>
+  </component>
+</project>
